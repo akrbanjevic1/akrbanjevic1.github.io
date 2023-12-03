@@ -12,7 +12,7 @@
 
         <header>
           <!--Navbar-->
-          <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar bg-secondary">
             <div class="container">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,13 +20,13 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link text-dark" href="./index.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-light" href="./index.html">Home<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark" href="https://www.linkedin.com/in/aleks-krbanjevic/">LinkedIn</a>
+                    <a class="nav-link text-light" href="https://www.linkedin.com/in/aleks-krbanjevic/">LinkedIn</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark" href="https://github.com/akrbanjevic1">GitHub</a>
+                    <a class="nav-link text-light" href="https://github.com/akrbanjevic1">GitHub</a>
                   </li>
                 </ul>
 
@@ -66,13 +66,29 @@
             <div class="row py-5">
               <!--Grid column-->
               <div id ="mainBody" class="col-md-12 text-center">
-                <div class="container">
+                <div class="container" id="realEstateContainer">
                   <h1>Real Estate Dashboard</h1>
-                  <h2>Background Context</h2>
+                  <h2 class="font-italic">Background Context</h2>
                   <p>This dashboard was built out of one simple, personal desire: to prepare myself for my first eventual real estate purchase.</p>
+                  <p>Being somebody that's in their 20's, it's inevitable that one eventually hits the point in their life where they ask themselves "... what's next" after renting all their adult life.
+                    While I am far, far away from owning a nice little, quiet cabin somewhere deep in the woods of the upper peninsula, I figured there was no better way to plan than by building my own solution to track relevant metrics for my geographical area.
+                  </p>
+                  <h2 class="font-italic">Technical Description</h2>
+                  <p><h3>Languages:</h3> Python, SQL</p>
+                  <p><h3>Visualization Tools:</h3> Pandas, NumPy, MatplotLib, PowerBI</p>
+                  <p><h3>Addtl. Tools:</h3> Jupyter Notebooks, sqllite</p>
+                  <!--Begin the iteration sections from here-->
+                  <h1> </h1>
+                  <h1>Iteration #1</h1>
+                  <img id="iteration0pic" src="./Images/REDashboardPics/PowerBI_Iteration0.png" class=" img-thumbnail">
+                  <p>At first, I needed to find a valuable source to either scrape or pull data from, and I managed to settle on leveraging the Zillow API first for a few select regions. As the only goal at this stage was to display at least some relevant RE data, a basic Jupyter Notebook was made
+                    and data was pulled into a Python script that formatted the resulting data, stored it in a dataframe, and subsequently exported the cleaned data into a CSV file.
+                  </p>
+                  <p>By leveraging the power of Jupyter & the Python language, it's easy to quickly query some data and see how it looks in a visualized notebook format.
+                    The only issue with this though, is that while it's really easy to be able to write your code & immediately view it in a nice "web-ui" format, any target audience
+                    members who may not have a data background & thus are not familiar with the Jupyter UI may find looking at data here to be a bit cumbersome.
+                  </p>
                 </div>
-                <img id="personalPic" src="Personal Picture.jpg" class=" img-thumbnail">
-                  <p>Testing, testing, 123</p>
               </div>
               <!--Grid column-->
             </div>
