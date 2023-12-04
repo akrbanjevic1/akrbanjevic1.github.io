@@ -122,6 +122,55 @@
                     an eyesore compared to where we started off.
                   </p>
                 </div>
+                <h4>Market Tech Tracker POC</h4>
+                <button type = "button" class = "btn btn-info" data-toggle="collapse" data-target="#marketDashboardContainer">Explore</button>
+                <div class="container collapse" id="marketDashboardContainer">
+                  <h2 class="font-italic">Background Context</h2>
+                  <p>Disclaimer: <h3 class="font-weight-bold">All the data seen in the following screenshots is randomized data; meaning *none* of it is actual data produced by
+                    any large enterprise entity.
+                  </h3></p>
+                  <p>Being that I am absolutely enamored with the idea of global business, I figured it would be fun to try developing a dashboard containing very market & region-specific 
+                    insights in an easy to read format. Thus, this quirky little React-powered web app was born. Was there any monetary value associated with this project? Not at all,
+                    but I had a blast showcasing it to a few colleagues of mine over dinner; demonstrating the capabilities that integrating visualization tools (like PowerBI) with React
+                    can bring.
+                  </p>
+                  <h2 class="font-italic">Technical Description</h2>
+                  <p><h3>Languages:</h3> Python, HTML/CSS, JavaScript</p>
+                  <p><h3>Visualization Tools:</h3> PowerBI</p>
+                  <p><h3>Addtl. Tools:</h3> Jupyter Notebooks, Pandas</p>
+                  <!--Begin the iteration sections from here-->
+                  <h1> </h1>
+                  <h1>Iteration #1</h1>
+                  <img id="iteration1picCSV" src="./Images/MarketPOCPics/MarketCSVPic.jpg" class=" img-thumbnail">
+                  <p>To start, I had to generate a randomized dataset pertaining to 2 different contexts: global business, and IT asset management. Simple enough, right? Well, as I was not able to
+                    find a "ready-made" dataset on the usual sites (like Kaggle), I had to use a randomizer tool that I provided a few arguments to. After that, I received a dataset, while a bit
+                    dirty, that was ripe for visualization.
+                  </p>
+                  <p>The screenshot details just one example of the dataset that I was working with, but in order to even get it in this state, I had to leverage Python and the Pandas library
+                    to clean up the columns, character-sets, and other small errors that were driving me nuts. 
+                  </p>
+                  <h1>Iteration #2</h1>
+                  <img id="iteration2picCSV" src="./Images/MarketPOCPics/MarketDashboardPic1.JPG" class=" img-thumbnail">
+                  <p>What good is a web app without an easy to use web interface? After testing 2 different variations, I settled on this design as the landing page. This decision
+                    was made after having consulted a few colleagues of mine on what they would consider a "simplistic" market-facing view, and so a simple table list with the country
+                    name & flag as values. 
+                  </p>
+                  <h1>Iteration #3</h1>
+                  <img id="iteration3picCSV" src="./Images/MarketPOCPics/MarketDashboardPic2.JPG" class=" img-thumbnail">
+                  <p>When we think of global business, what sorts of metrics come to mind? To get a better understanding of what the average joe would want to see, I did a few simple
+                    end-user surveys amongst my small group of select colleagues, and devised a list of about 10 different bits of information. From here, I refined this list further,
+                    and developed a view in my dashboard that visualized some of these. While the data above is completely falsified, it's fascinating to see just how cleanly we can visualize
+                    some of this information using modern web-development technologies.
+                  </p>
+                  <h1>Iteration #4</h1>
+                  <img id="iteration4picCSV" src="./Images/MarketPOCPics/MarketPowerBI Report.JPG" class=" img-thumbnail">
+                  <p>While React is a powerful tool, sometimes it's easiest to not have to "re-invent" the wheel, and this is where tools like PowerBI come in. As I was working with
+                    a handful of different CSV and JSON files w/ market-specific data, being able to use the PowerBI functionality to clean, specifiy, and merge data sources was a game changer.
+                    The screenshot above demonstrates what a market-specific view within PowerBI looks like.
+                  </p>
+                </div>
+                </div>
+                </div>
               </div>
               <!--Grid column-->
             </div>
